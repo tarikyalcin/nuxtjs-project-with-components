@@ -19,7 +19,6 @@
 
     <div class="blog-card">
       <h2>"Kitap yok olduğunda insan da yok olacak!"</h2>
-      <!--<div class="date-red">Ekim 2024</div>-->
       <img src="/images/blog/blog2.jpg" alt="images" class="blog-img">
       <div class="text">
         <p>
@@ -33,7 +32,6 @@
 
     <div class="blog-card">
       <h2>“Anadolu Kitabı Koruyamamıştır.”</h2>
-      <!--<div class="date-red">Ekim 2024</div>-->
       <img src="/images/blog/blog3.jpg" alt="images" class="blog-img">
       <div class="text">
         <p>
@@ -47,7 +45,6 @@
     
     <div class="blog-card">
       <h2>“Mimarlık Daima Siyasaldır.”</h2>
-      <!--<div class="date-red">Ekim 2024</div>-->
       <img src="/images/blog/blog4.jpg" alt="images" class="blog-img">
       <div class="text">
         <p>
@@ -73,9 +70,9 @@
   .blog-box {
     display: flex;
     padding: 10px;
-    flex-wrap: wrap;  /* Elemanların sarılmasını sağlar */
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Kartlar arasına boşluk ekler */
+    gap: 20px;
   }
   h2 {
     font-size: 20px;
@@ -83,11 +80,10 @@
   }
   .blog-card {
     background: #fff;
-    /*border: 1px solid #add;*/
     width: 40%;
     padding: 20px;
     position: relative;
-    transition: width 0.3s ease; /* Yumuşak geçiş için */
+    transition: width 0.3s ease;
     
   }
   .date-red {
@@ -122,7 +118,7 @@
   }
   .date-read {
     display: flex;
-    justify-content: space-between; /*iki tarafa yasla*/
+    justify-content: space-between;
     
   }
   .read-more {
@@ -133,7 +129,6 @@
   .read-more:hover {
     text-decoration: underline;
   }
-  /* Media Query: Pencere genişliği 1000px'den küçükse */
   @media (max-width: 1000px) {
     .blog-card {
       width: 100%;
