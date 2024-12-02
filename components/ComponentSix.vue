@@ -133,5 +133,10 @@
   .read-more:hover {
     text-decoration: underline;
   }
-
+  /* Media Query: Pencere genişliği 1000px'den küçükse */
+  @media (max-width: 1000px) {
+    .blog-card {
+      width: 100%;
+    }
+  }
 </style>
