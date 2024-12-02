@@ -1,6 +1,6 @@
 <template>
 
-  <div class="blog-box">
+  <div class="six">
 
     <div class="blog-card">
       <h2>"Biz Çalıkuşu Nesliyiz!"</h2>
@@ -67,14 +67,14 @@
 </script>
   
 <style>
-  .blog-box {
+  .six {
     display: flex;
     padding: 10px;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
   }
-  h2 {
+  .six h2 {
     font-size: 20px;
     margin-bottom: 10px;
   }
@@ -102,18 +102,18 @@
     width: 100%;
     height: auto;
   }
-  .text {
+  .six .text {
     background: #d4d3d37a;
     margin-top: -30px;
     padding: 30px 10px;
     
   }
-  p .date{
+  .six p .date{
     font-size: 20px;
     color: #333;
     margin-bottom: 10px;
   }
-  .date {
+  .six .date {
     font-style: italic;
   }
   .date-read {

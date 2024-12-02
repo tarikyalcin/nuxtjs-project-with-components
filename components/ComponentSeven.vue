@@ -1,6 +1,6 @@
 <template>
 
-<div class="side">
+<div class="seven">
   <div class="son-bloglar">
     <div class="baslik"><h3>✏️ Blog'dan Son Yazılar</h3></div>
     <div class="box">
@@ -35,7 +35,7 @@
 </template>
 
 <style>
-  .side { 
+  .seven { 
     width: 280px;
     padding: 10px;
   }
@@ -43,18 +43,18 @@
     border: 1px solid #eee4cd;
     margin: 5px 10px;
   }
-  a {
+  .seven a {
     text-decoration: none;
     color: #333;
   }
-  h3 {
+  .seven h3 {
     color: #931818;
   }
-  h4 {
+  .seven h4 {
     font-weight: 400;
     margin-bottom: 5px;
   }
-  li {
+  .seven li {
     text-indent: 20px;
     margin: 5px;
     list-style-type: none;
