@@ -26,7 +26,7 @@ interface Book {
   image: string;
 }
 
-// Kitap verilerini tanımlıyoruz
+
 const books = ref<Book[]>([
   { id: 1, name: 'Avrasyada Şamanlar', author: 'MIHALY HOPPAL', price: '90,00 ₺', image: '/images/books/AvrasyadaŞamanlar.jpg' },
   { id: 2, name: 'Bilişsel Davranış Terapisinde Bilinçli Uygulama', author: 'James F. Boswell', price: '459₺', image: '/images/books/BilişselDavranışlarTerapisindeBilinçliUygulama.jpg' },
@@ -59,6 +59,7 @@ const truncatedAuthor = (author: string) => {
   padding: 10px;
   border-radius: 8px;
   max-width: 1000px;
+  
   margin: auto;
 }
 
@@ -90,9 +91,9 @@ const truncatedAuthor = (author: string) => {
   margin: 3px 0;
   font-size: 1rem;
   color: #23528e;
-  white-space: nowrap; /* Tek satırda kalmasını sağlar */
+  white-space: nowrap; /* Tek satırda kalmasını içim */
   overflow: hidden;
-  text-overflow: ellipsis; /* Uzun başlıklar için "..." */
+  text-overflow: ellipsis; /* Uzun başlıkları kısmak için ... olarak */
 }
 
 .book-info p {
