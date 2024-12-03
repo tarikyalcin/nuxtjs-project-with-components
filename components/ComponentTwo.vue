@@ -16,29 +16,33 @@
       </button>
     </div>
 
-  
+
+
+
     <div class="carousel-container">
-      <!-- Sol Ok Butonu -->
+    
       <button class="arrow left" @click="prevImage">❮</button>
 
-      <!-- Carousel Görselleri -->
+
       <div class="carousel" :style="{ transform: `translateX(-${currentIndex * 100}%)` }">
         <img v-for="(image, index) in images" :key="index" :src="image" alt="Carousel Image" />
       </div>
 
-      <!-- Sağ Ok Butonu -->
+
       <button class="arrow right" @click="nextImage">❯</button>
     </div>
 
-    <!-- Kampanyalar Görseli -->
+
+
     <div class="campaign-banner">
       <img src="public/images/kampanyalar.jpg" alt="Kampanyalar" />
     </div>
   </div>
 </template>
+<script lang="ts">
+import { defineComponent } from "vue";
 
-<script>
-export default {
+export default defineComponent({
   name: "ComponentTwo",
   data() {
     return {
@@ -51,31 +55,33 @@ export default {
         "/images/image6.jpg",
         "/images/image7.jpg",
         "/images/image8.jpg",
-      ],
-      currentIndex: 0,
-      autoSlideInterval: null,
+      ] as string[], // Resimler dizi olarak
+      currentIndex: 0 as number, // currentIndex bir sayı olarak
+      autoSlideInterval: null as NodeJS.Timeout | null, 
     };
   },
   mounted() {
     this.startAutoSlide();
   },
-  beforeDestroy() {
-    clearInterval(this.autoSlideInterval);
+  beforeUnmount() {
+    if (this.autoSlideInterval) {
+      clearInterval(this.autoSlideInterval);
+    }
   },
   methods: {
-    nextImage() {
+    nextImage(): void {
       this.currentIndex = (this.currentIndex + 1) % this.images.length;
     },
-    prevImage() {
+    prevImage(): void {
       this.currentIndex =
         (this.currentIndex - 1 + this.images.length) % this.images.length;
     },
-    startAutoSlide() {
+    startAutoSlide(): void {
       this.autoSlideInterval = setInterval(() => {
         this.nextImage();
-      }, 5000); // 5 saniyede bir otomatik geçiş
+      }, 5000); // 5 sn
     },
-    navigateTo(destination) {
+    navigateTo(destination: string): void {
       switch (destination) {
         case "blog":
           window.location.href = "/blog";
@@ -97,7 +103,7 @@ export default {
       }
     },
   },
-};
+});
 </script>
 
 <style scoped>
@@ -141,7 +147,7 @@ export default {
 .top-buttons-right button {
   padding: 8px 12px;
   background-color: transparent;
-  color: rgb(0, 0, 0); /* Yazı rengi siyah */
+  color: rgb(0, 0, 0); 
   border: 2px solid black;
   border-radius: 4px;
   cursor: pointer;
@@ -154,7 +160,7 @@ export default {
   color: #0a0a0a; 
 }
 
-/* Instagram ve Twitter Butonlarının Boyutları */
+/* insta twiter fotosunun Boyutları */
 .top-buttons-left img,
 .top-buttons-right img {
   width: 18px;
@@ -173,7 +179,7 @@ export default {
   border-radius: 8px;
 }
 
-/* Carousel Görselleri */
+
 .carousel {
   display: flex;
   transition: transform 0.5s ease-in-out;
@@ -186,7 +192,7 @@ export default {
   display: block;
 }
 
-/* Ok Butonları */
+
 .arrow {
   position: absolute;
   top: 50%;
@@ -208,7 +214,7 @@ export default {
   right: 10px;
 }
 
-/* Kampanyalar Görseli */
+
 .campaign-banner {
   margin-top: 20px;
   text-align: center;
