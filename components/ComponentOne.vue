@@ -14,12 +14,14 @@
   </a>
 </div>
 
+
       <div class="search-bar">
         <input type="text" placeholder="Satışta olan 11.135.107 kitap içinde" />
         <button>
           <i class="search-icon">🔍</i>
         </button>
       </div>
+
 
       <div class="links">
         <a href="#">Yardım</a>
@@ -54,6 +56,7 @@
         </div>
         <a href="#"><i class="profile-icon">👤</i> Bana Özel</a>
         <a href="#"><i class="cart-icon">🛒</i> Sepetim (0)</a>
+
       </div>
     </div>
 
@@ -74,10 +77,13 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'ComponentOne'
-}
+
+<script lang="ts">
+import { defineComponent } from 'vue';
+
+export default defineComponent({
+  name: 'ComponentOne',
+});
 </script>
 
 <style scoped>
