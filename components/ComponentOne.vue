@@ -105,7 +105,7 @@ export default defineComponent({
 }
 
 .logo img {
-  margin-left: 80px;
+  margin-right: 30px;
   width: 120px;
 }
 
