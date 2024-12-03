@@ -60,13 +60,7 @@
 
   </template>
   
-<script>
-  export default {
-    name: 'ComponentSix',
-  };
-</script>
-  
-<style>
+  <style>
   .six {
     display: flex;
     padding: 10px;
@@ -134,4 +128,11 @@
       width: 100%;
     }
   }
-</style>
+  </style>
+  
+  <script>
+    export default {
+      name: 'ComponentSix',
+    };
+  </script>
+    

@@ -44,19 +44,25 @@
 
     <div class="sss">
       <div class="baslik"><h2>Sıkça Sorulan Sorular</h2></div>
-      <div class="box">
+      <div class="box-sss">
         <ul>
-          <li><a href="#">Sistem nasıl işliyor?</a></li>
-          <li><a href="#">İstediğim ürünü nasıl alırım?</a></li>
-          <li><a href="#">Teslimat süresi nedir?</a></li>
-          <li><a href="#">Siparişimi nasıl takip edebilirim?</a></li>
-          <li><a href="#">Ürün hakkında nasıl bilgi alırım?</a></li>
-          <li><a href="#">Birden fazla satıcıdan ürün alırsam nasıl gönderilir?</a></li>
-          <li><a href="#">Kargo birleştirme nedir?</a></li>
-          <li><a href="#">Nasıl Ödeme Yapabilirim?</a></li>
-          <li><a href="#">Kargo ücreti ne kadar?</a></li>
-          <li><a href="#">Kondisyon yıldızları ne anlama geliyor?</a></li>
-          <li><a href="#">Site yönetimine nasıl ulaşırım?</a></li>
+          <div class="maddeler">
+            <li><a href="#">Sistem nasıl işliyor?</a></li>
+            <li><a href="#">İstediğim ürünü nasıl alırım?</a></li>
+            <li><a href="#">Teslimat süresi nedir?</a></li>
+            <li><a href="#">Siparişimi nasıl takip edebilirim?</a></li>
+          </div>
+          <div class="maddeler">
+            <li><a href="#">Ürün hakkında nasıl bilgi alırım?</a></li>
+            <li><a href="#">Birden fazla satıcıdan ürün alırsam nasıl gönderilir?</a></li>
+            <li><a href="#">Kargo birleştirme nedir?</a></li>
+          </div>
+          <div class="maddeler">
+            <li><a href="#">Nasıl Ödeme Yapabilirim?</a></li>
+            <li><a href="#">Kargo ücreti ne kadar?</a></li>
+            <li><a href="#">Kondisyon yıldızları ne anlama geliyor?</a></li>
+            <li><a href="#">Site yönetimine nasıl ulaşırım?</a></li>
+          </div>
         </ul>
       </div>
     </div>
@@ -70,12 +76,12 @@
     display: flex;
     justify-content: left;
   }
+  .uyelik, .alicilar, .saticilar {
+    margin: 10px 20px;
+  }
   .box-renkli {
     background: #eee4cd;
     padding: 5px;
-  }
-  .uyelik, .alicilar, .saticilar {
-    margin: 10px 20px;
   }
   .eight h2 {
     color: #931818;
@@ -83,6 +89,7 @@
   .eight li {
     color: #337ab7;
     padding-bottom: 5px;
+    padding-right: 20px;
   }
   .eight a {
     text-decoration: none;
@@ -91,12 +98,15 @@
   .sss {
     width: 70%;
   }
-  /*Burada yazılar 3 sütuna dağılmış, ekran küçülünce alt alta iniyor.
-  Onu yapamadım*/
-  @media (min-width: 1000px) {
-    .sss {
-      width: 100%;
-    }
+  .box-sss {
+    border: 1px solid #eee4cd;
+  }
+  .box-sss .ul {
+    display: flex;
+  }
+  .eight .box-sss .maddeler {
+    width: 30%;
+    margin-bottom: 10px;
   }
 
 </style>

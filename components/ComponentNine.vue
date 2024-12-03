@@ -1,13 +1,33 @@
 <template>
-    <div>
-      <h1>Merhaba, ben Component 9!</h1>
-      <p>Bu sayfa Cemre'ye ait.</p>
-    </div>
-  </template>
-  
-  <script>
+
+<div class="nine">
+  <div class="baslik">Sepetim</div>
+  <div class="sepet-box">
+    <img src="/images/sepet.jpg" alt="sepet">
+    
+  </div>
+</div>
+
+
+
+
+
+</template>
+
+
+
+<style>
+
+
+</style>
+
+
+
+
+
+<script>
   export default {
-    name: 'ComponentSeven',
+    name: 'ComponentNine',
   };
-  </script>
+</script>
   
