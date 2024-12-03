@@ -68,12 +68,14 @@
 <style>
   .eight .ayni-satir {
     display: flex;
-    justify-content: space-between;
-    gap: 10px;
+    justify-content: left;
   }
   .box-renkli {
     background: #eee4cd;
     padding: 5px;
+  }
+  .uyelik, .alicilar, .saticilar {
+    margin: 10px 20px;
   }
   .eight h2 {
     color: #931818;
