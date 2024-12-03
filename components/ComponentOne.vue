@@ -76,7 +76,7 @@
 
 <script>
 export default {
-  name: 'Header'
+  name: 'ComponentOne'
 }
 </script>
 
