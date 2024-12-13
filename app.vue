@@ -27,16 +27,16 @@
 </template>
 
 <script>
-import ComponentOne from '~/components/ComponentOne.vue';
-import ComponentTwo from '~/components/ComponentTwo.vue';
+import ComponentOne from '~/components/Header.vue';
+import ComponentTwo from '~/components/Slider.vue';
 import ComponentThree from '~/components/ComponentThree.vue';
 import ComponentFour from '~/components/ComponentFour.vue';
-import ComponentFive from '~/components/ComponentFive.vue';
-import ComponentSix from '~/components/ComponentSix.vue';
-import ComponentSeven from '~/components/ComponentSeven.vue';
-import ComponentEight from '~/components/ComponentEight.vue';
-import ComponentNine from '~/components/ComponentNine.vue';
-import ComponentTen from '~/components/ComponentTen.vue';
+import ComponentFive from '~/components/Footer.vue';
+import ComponentSix from '~/components/BlogCard.vue';
+import ComponentSeven from '~/components/IslemRehberi.vue';
+import ComponentEight from '~/components/Yardim.vue';
+import ComponentNine from '~/components/Sepet.vue';
+import ComponentTen from '~/components/Dergi.vue';
 
 export default {
   components: {

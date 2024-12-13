@@ -43,7 +43,7 @@
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: "ComponentTwo",
+  name: "Slider",
   data() {
     return {
       images: [

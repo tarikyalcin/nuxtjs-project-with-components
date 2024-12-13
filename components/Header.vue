@@ -82,7 +82,7 @@
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: 'ComponentOne',
+  name: 'Header',
 });
 </script>
 
